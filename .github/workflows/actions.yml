@@ -20,6 +20,9 @@ jobs:
         run: |
           RUN_TEST=`cut -d" " -f1 vars.txt`
           echo "RUN_TEST=$RUN_TEST" >> $GITHUB_ENV
+          SUITE=`cut -d" " -f2 vars.txt`
+          
       - name: Print vars
         run: |
           echo ${RUN_TEST}
+          echo ${SUITE}
