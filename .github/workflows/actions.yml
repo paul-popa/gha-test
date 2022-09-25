@@ -15,8 +15,7 @@ jobs:
 
       - name: Empty and append file
         run: |
-          rm vars.txt
-          touch vars.txt
+          > vars.txt
           echo -n "yes" >> vars.txt
           echo -n " yes" >> vars.txt
           echo -n " yes" >> vars.txt
