@@ -19,7 +19,7 @@ jobs:
       - name: Read vars from file and set variables
         run: |
           RUN_TEST=`cut -d" " -f1 vars.txt`
-          echo $RUN_TEST >> $GITHUB_ENV
+          echo "${RUN_TEST}" >> $GITHUB_ENV
       - name: Print vars
         run: |
           echo ${RUN_TEST}
