@@ -18,7 +18,7 @@ jobs:
 
       - name: Read vars from file and set variables
         run: |
-          echo "${RUN_TEST}=`cut -d" " -f1 vars.txt`"
+          echo "${RUN_TEST}={`cut -d" " -f1 vars.txt`}"
       
       - name: Print vars
         run: |
