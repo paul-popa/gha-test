@@ -18,8 +18,8 @@ jobs:
           rm vars.txt
           touch vars.txt
           echo -n "yes" >> vars.txt
-          echo -n "yes" >> vars.txt
-          echo -n "yes" >> vars.txt
+          echo -n " yes" >> vars.txt
+          echo -n " yes" >> vars.txt
 
       - name: Read vars from file and set variables
         run: |
