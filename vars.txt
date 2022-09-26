@@ -1,1 +1,1 @@
-yes 13 test
+run-test version suite
