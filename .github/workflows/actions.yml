@@ -16,9 +16,9 @@ jobs:
       - name: Empty and append file
         run: |
           > vars.txt
-          echo -n "yes" >> vars.txt
-          echo -n " yes" >> vars.txt
-          echo -n " yes" >> vars.txt
+          echo -n "run-test" >> vars.txt
+          echo -n " suite" >> vars.txt
+          echo -n " version" >> vars.txt
 
       - name: Read vars from file and set variables
         run: |
